@@ -48,7 +48,8 @@ mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
 mainCyclist.scale=0.07;
   
 //set collider for mainCyclist
-
+mainCyclist.setCollider("circle",0,0,10);
+mainCyclist.debug = true;
   
 gameOver = createSprite(650,150);
 gameOver.addImage(gameOverImg);
@@ -58,7 +59,6 @@ gameOver.visible = false;
 pinkCG = new Group();
 yellowCG = new Group();
 redCG = new Group();
-  
 }
 
 function draw() {
